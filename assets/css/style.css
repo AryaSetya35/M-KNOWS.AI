@@ -19,8 +19,6 @@ body
     width: auto;
 }
 
-
-/* Navbar Transparan & Sticky */
 .navbar-custom {
     position: fixed; /* Navbar tetap di atas */
     width: 100%;
@@ -32,9 +30,9 @@ body
     align-items: center; /* Pastikan elemen navbar tetap sejajar */
     transition: background-color 0.3s ease-in-out;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.5); /* Warna transparan */
+    background: rgba(0, 3, 208, 0.20); /* Warna transparan */
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     overflow: hidden; /* Mencegah elemen dalam navbar meluap */
 }
 
