@@ -1,0 +1,198 @@
+@import url(../css/supreme.css);
+
+:root {
+    --font-base: "Supreme", sans-serif
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0,08)
+}
+/* Styling umum */
+body
+
+/* UNTUK NGATUR JARAK ATAS BAWA SETIAP SECTION */
+.py-custom {
+    padding-top: 8rem;  /* atau lebih besar sesuai kebutuhan */
+    padding-bottom: 8rem;
+  }
+
+/* styling logo m-know.ai*/
+.logo-img {
+    height: 60px; /* Sesuaikan ukuran logo */
+    width: auto;
+}
+
+
+/* Navbar Transparan & Sticky */
+.navbar-custom {
+    position: fixed; /* Navbar tetap di atas */
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px; /* Tetapkan tinggi navbar agar tidak berubah */
+    padding: 10px 20px; /* Pastikan padding tidak membuat navbar membesar */
+    display: flex;
+    align-items: center; /* Pastikan elemen navbar tetap sejajar */
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.5); /* Warna transparan */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    overflow: hidden; /* Mencegah elemen dalam navbar meluap */
+}
+
+/* Saat di-scroll, background berubah menjadi solid */
+.navbar-custom.scrolled {
+    background: rgb(0, 6, 71) !important; /* Warna solid */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    filter: none !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style untuk link navbar */
+.navbar-custom .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Warna berubah saat hover */
+.navbar-custom .nav-link:hover {
+    color: #f8d210;
+}
+
+/* Style tombol */
+.navbar-custom .btn-primary {
+    background-color: #f8d210;
+    border-color: #f8d210;
+    color: black;
+    font-weight: bold;
+}
+
+/*perubahan warna pada tombol coba gratis*/
+.navbar-custom .btn-primary:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Video Background */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* Overlay untuk meningkatkan keterbacaan teks */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Efek gelap agar teks lebih terbaca */
+    z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* style untuk judul*/
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*style untuk paragraf*/
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Ukuran judul lebih kecil untuk layar kecil */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Ukuran teks lebih kecil agar sesuai */
+    }
+
+    .hero-content {
+        padding: 10px; /* Mengurangi padding agar tidak terlalu penuh */
+    }
+}
+
+
+/* Styling Section Testimoni */
+.testimonials {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Styling Testimonial Card */
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Styling Footer dalam Testimoni */
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Nama dan Jabatan */
+.testimonial-info {
+    text-align: left;
+}
+
+.testimonial-info strong {
+    font-weight: bold;
+    display: block;
+}
+
+.testimonial-info span {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Logo */
+.testimonial-card img {
+    height: 40px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+    margin-top: 20px;
+}
+
+
+
