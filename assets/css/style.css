@@ -142,5 +142,44 @@ body
     }
 }
 
+/* Styling Modal */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Pindahkan Logo ke Kiri */
+.modal-header .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Input dengan ikon */
+.input-group .form-control {
+    border-right: 0;
+}
+
+.input-group-text {
+    background: #fff;
+    border-left: 0;
+    cursor: pointer;
+}
+
+/* Styling Toggle Password */
+.toggle-password {
+    cursor: pointer;
+}
+
+/* Garis Pemisah di kiri dan kanan tulisan "atau" */
+.separator hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0;
+}
+
+
+
 
 
