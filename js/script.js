@@ -8,4 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar.classList.remove("scrolled");
         }
     });
+
+    // Tampilkan modal saat klik "Coba Gratis"
+    if (cobaGratisBtn) {
+        cobaGratisBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            var signupModal = new bootstrap.Modal(document.getElementById('signupModal'));
+            signupModal.show();
+        });
+    }
 });
